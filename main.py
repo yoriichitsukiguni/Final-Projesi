@@ -82,6 +82,11 @@ def main():
         tecrube_filtre = df[(df["nesne degeri"] == "beyaz yaka") & (df["tecrube"] > 3)]
         print("Tecrubesi 3 seneden fazla olan Beyaz Yakalilar:\n", tecrube_filtre)
 
+        # f) Yeni maaşı 10000 TL üzerinde olanlar için 2-5 satır arasındakileri seçme ve yazdırma
+        yuksek_maas_filtre = df[df["yeni maas"] > 10000]
+        satir_araligi_filtre = yuksek_maas_filtre.iloc[2:5, [1, 12]]
+        print("Yeni maasi 10000 TL üzerinde olan 2-5 satirlar arasi veriler:\n", satir_araligi_filtre)
+
 
 
     except Exception as e:
