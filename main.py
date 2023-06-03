@@ -61,6 +61,10 @@ def main():
     
         df = pd.DataFrame(data)
 
+         # a) Boş değerleri 0 atama
+        df.fillna(0, inplace=True)
+
+
 
     except Exception as e:
         print("Hata olustu:", str(e))
