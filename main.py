@@ -91,6 +91,10 @@ def main():
         yeni_df = df[["ad", "soyad", "sektor", "yeni maas"]]
         print("Yeni DataFrame:\n", yeni_df)
 
+        # DataFrame'i CSV dosyasına kaydetme
+        df.to_csv("veriler.csv", index=False)
+
+
 
     except Exception as e:
         print("Hata olustu:", str(e))
