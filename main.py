@@ -74,6 +74,10 @@ def main():
         yuksek_maasli_sayisi = len(df[df["maas"] > 15000])
         print("Maasi 15000 TL üzerinde olanlarin toplam sayisi:", yuksek_maasli_sayisi)
 
+        # d) Yeni maaşa göre DataFrame'i küçükten büyüğe sıralama ve yazdırma
+        sirali_df = df.sort_values("yeni maas")
+        print("Siralanmis DataFrame:\n", sirali_df)
+
 
 
     except Exception as e:
