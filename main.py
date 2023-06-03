@@ -78,6 +78,10 @@ def main():
         sirali_df = df.sort_values("yeni maas")
         print("Siralanmis DataFrame:\n", sirali_df)
 
+         # e) Tecrübesi 3 seneden fazla olan Beyaz yakalıları bulma ve yazdırma
+        tecrube_filtre = df[(df["nesne degeri"] == "beyaz yaka") & (df["tecrube"] > 3)]
+        print("Tecrubesi 3 seneden fazla olan Beyaz Yakalilar:\n", tecrube_filtre)
+
 
 
     except Exception as e:
