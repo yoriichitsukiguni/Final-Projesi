@@ -64,6 +64,12 @@ def main():
          # a) Boş değerleri 0 atama
         df.fillna(0, inplace=True)
 
+         # b) Tecrübe ve yeni maaş ortalamalarını gruplayarak hesaplama ve yazdırma
+        tecrube_ortalamalari = df.groupby("nesne degeri")["tecrube"].mean()
+        yeni_maas_ortalamalari = df.groupby("nesne degeri")["yeni maas"].mean()
+        print("Tecrube Ortalamalari:\n", tecrube_ortalamalari)
+        print("Yeni maas Ortalamalari:\n", yeni_maas_ortalamalari)
+
 
 
     except Exception as e:
