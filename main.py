@@ -70,6 +70,10 @@ def main():
         print("Tecrube Ortalamalari:\n", tecrube_ortalamalari)
         print("Yeni maas Ortalamalari:\n", yeni_maas_ortalamalari)
 
+        # c) Maaşı 15000 TL üzerinde olanların toplam sayısını bulma
+        yuksek_maasli_sayisi = len(df[df["maas"] > 15000])
+        print("Maasi 15000 TL üzerinde olanlarin toplam sayisi:", yuksek_maasli_sayisi)
+
 
 
     except Exception as e:
