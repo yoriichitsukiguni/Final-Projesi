@@ -26,6 +26,11 @@ def main():
         mavi_yaka2 = MaviYaka("10101010101", "Elif", "Yilmaz", 38, "Kadin", "Turk", "insaat", 42, 18000, 0.5)
         mavi_yaka3 = MaviYaka("12121212121", "Ayhan", "Aktas", 31, "Erkek", "Turk", "teknoloji", 30, 14000, 0.3)
 
+        # Beyaz Yaka sınıfı için 3 nesne oluşturulması
+        beyaz_yaka1 = BeyazYaka("14141414141", "Eren", "Aydin", 36, "Erkek", "Turk", "teknoloji", 12, 18000, 500)
+        beyaz_yaka2 = BeyazYaka("16161616161", "Gizem", "Kara", 42, "Kadin", "Turk", "finans", 20, 22000, 2500)
+        beyaz_yaka3 = BeyazYaka("18181818181", "Ahmet", "Yilmaz", 39, "Erkek", "Turk", "muhaasebe", 18, 19000, 1500)
+
 
     except Exception as e:
         print("Hata olustu:", str(e))
