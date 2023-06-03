@@ -10,6 +10,11 @@ def main():
         # İnsan sınıfı için 2 nesne oluşturulması
         insan1 = Insan("11111111111", "Ahmet", "Yilmaz", 30, "Erkek", "Turk")
         insan2 = Insan("22222222222", "Ayse", "Demir", 25, "Kadin", "Turk")
+        
+        # İşsiz sınıfı için 3 nesne oluşturulması
+        issiz1 = Issiz("33333333333", "Mehmet", "Kara", 28, "Erkek", "Turk", {"mavi yaka": 2, "beyaz yaka": 4, "yonetici": 6})
+        issiz2 = Issiz("44444444444", "Fatma", "Ak", 32, "Kadin", "Turk", {"mavi yaka": 3, "beyaz yaka": 5, "yonetici": 7})
+        issiz3 = Issiz("55555555555", "Ali", "Beyaz", 29, "Erkek", "Turk", {"mavi yaka": 1, "beyaz yaka": 6, "yonetici": 8})
 
     except Exception as e:
         print("Hata olustu:", str(e))
