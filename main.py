@@ -87,6 +87,9 @@ def main():
         satir_araligi_filtre = yuksek_maas_filtre.iloc[2:5, [1, 12]]
         print("Yeni maasi 10000 TL üzerinde olan 2-5 satirlar arasi veriler:\n", satir_araligi_filtre)
 
+         # g) Ad, soyad, sektör ve yeni maaşı içeren yeni bir DataFrame oluşturma ve yazdırma
+        yeni_df = df[["ad", "soyad", "sektor", "yeni maas"]]
+        print("Yeni DataFrame:\n", yeni_df)
 
 
     except Exception as e:
